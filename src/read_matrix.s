@@ -73,7 +73,6 @@ read_matrix:
         blt    t0, zero, err_fread  # if rows < 0, jump to err_fread
 
         # Allocate memory for matrix
-        ebreak
         lw      t0, 0(s1)          # t0 = t0 ... number of rows
         lw      t1, 0(s2)          # t1 = t1 ... number of columns
         mul     a0, t0, t1         # a0 = t0 * t1 ... number of elements 

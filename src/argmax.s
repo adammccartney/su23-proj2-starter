@@ -20,7 +20,6 @@ argmax:
     sw s0, 0(sp)         # push callee-saved to stack
     sw ra, 4(sp)         # Push return address onto stack 
 
-    ebreak
     li t2, 1                  # t2 = 1 
     blt a1, t2, handle_error  # if a1 < 1, goto handle_error
 

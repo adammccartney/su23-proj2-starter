@@ -25,7 +25,6 @@
 write_matrix:
 
     # Prologue
-    ebreak
     addi sp, sp, -24    # Allocate space on the stack for 8 registers
     sw s0, 0(sp)        # space for local filename 
     sw s1, 4(sp)        # space for pointer to local matrix 
